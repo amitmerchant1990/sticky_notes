@@ -42,7 +42,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<div id="container">
 		<div id="top">
 			Stickynotes App
-                        <!--<p><?php echo $this->Html->link('logout', array('controller'=>'users', 'action'=>'logout')); ?></p>-->
+                        <span><?php echo $this->Html->image('logout.png', array("alt" => "Brownies", 'title'=>'logout', 'url' => array('controller' => 'users', 'action' => 'logout')), array('style'=>'float:right')); ?></span>
 		</div>
 		<div id="content">
 
