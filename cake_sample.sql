@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 30, 2013 at 12:47 PM
+-- Generation Time: Apr 02, 2013 at 03:05 PM
 -- Server version: 5.5.24
 -- PHP Version: 5.3.10-1ubuntu3.5
 
@@ -53,6 +53,32 @@ CREATE TABLE IF NOT EXISTS `posts` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `stickynotes`
+--
+
+CREATE TABLE IF NOT EXISTS `stickynotes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `note` varchar(255) DEFAULT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=70 ;
+
+--
+-- Dumping data for table `stickynotes`
+--
+
+INSERT INTO `stickynotes` (`id`, `note`, `created`) VALUES
+(1, 'This is a sticky note you can type and edit.', '2013-04-01 09:33:54'),
+(2, 'Lets see if it will work with my iPhone', '2013-03-31 18:30:00'),
+(24, 'hello world', '2013-03-31 18:30:00'),
+(39, 'hello', '2013-04-02 04:34:16'),
+(23, 'Good test', '2013-04-02 05:49:12'),
+(69, 'tomorrow is my birthday.. :)', '2013-04-02 06:34:53');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -65,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=33 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
 
 --
 -- Dumping data for table `users`
@@ -78,7 +104,8 @@ INSERT INTO `users` (`id`, `username`, `password`, `group_id`, `created`, `modif
 (29, 'root_123456', 'test', 0, '2013-03-30 11:02:17', '2013-03-30 11:02:17'),
 (30, 'root_manish', '63d59a08ac755ec8c9a6c84904e4060bceb45121', 0, '2013-03-30 12:06:34', '2013-03-30 12:06:34'),
 (31, 'root_amit', '63d59a08ac755ec8c9a6c84904e4060bceb45121', 0, '2013-03-30 12:24:20', '2013-03-30 12:24:20'),
-(32, 'root_amit_m', '63d59a08ac755ec8c9a6c84904e4060bceb45121', 0, '2013-03-30 12:26:02', '2013-03-30 12:26:02');
+(32, 'root_amit_m', '63d59a08ac755ec8c9a6c84904e4060bceb45121', 0, '2013-03-30 12:26:02', '2013-03-30 12:26:02'),
+(33, 'root_mamit', '63d59a08ac755ec8c9a6c84904e4060bceb45121', 0, '2013-04-01 13:57:48', '2013-04-01 13:57:48');
 
 -- --------------------------------------------------------
 
