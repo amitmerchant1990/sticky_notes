@@ -1,4 +1,4 @@
-Sticky Notes usink CakePHP
+Sticky Notes using CakePHP
 =========================
 
 
