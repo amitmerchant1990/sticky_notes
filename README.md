@@ -1,5 +1,5 @@
-cake_sample
-===========
+Sticky Notes usink CakePHP
+=========================
 
 
 This is a basic "Sticky Note" application built with CakePHP Framework.
