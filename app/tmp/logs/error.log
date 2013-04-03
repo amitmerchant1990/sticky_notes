@@ -1,0 +1,1483 @@
+2013-03-29 14:21:34 Error: [MissingViewException] View file "/var/www/CakeSample/app/View/Pages/display.ctp" is missing.
+#0 /var/www/CakeSample/lib/Cake/View/View.php(460): View->_getViewFileName('display')
+#1 /var/www/CakeSample/lib/Cake/Controller/Controller.php(959): View->render('display', NULL)
+#2 /var/www/CakeSample/app/Controller/PagesController.php(80): Controller->render('display')
+#3 [internal function]: PagesController->display('display')
+#4 /var/www/CakeSample/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-03-29 15:25:27 Error: [MissingControllerException] Controller class UsersController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-29 15:25:42 Error: [MissingViewException] View file "/var/www/CakeSample/app/View/Pages/login.ctp" is missing.
+#0 /var/www/CakeSample/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /var/www/CakeSample/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-29 15:27:36 Error: [MissingViewException] View file "/var/www/CakeSample/app/View/Pages/login.ctp" is missing.
+#0 /var/www/CakeSample/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /var/www/CakeSample/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-29 16:59:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'root123' for key 'username'
+#0 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(437): PDOStatement->execute(Array)
+#1 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(985): DboSource->execute('INSERT INTO `ca...')
+#3 /var/www/CakeSample/lib/Cake/Model/Model.php(1705): DboSource->create(Object(AppModel), Array, Array)
+#4 /var/www/CakeSample/app/Controller/UsersController.php(76): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/CakeSample/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-03-29 17:11:34 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-29 17:11:41 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-30 09:43:55 Error: [MissingControllerException] Controller class IndexController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-30 10:20:09 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-30 10:46:57 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-30 10:46:58 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-30 10:46:58 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-30 11:51:24 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-30 12:25:42 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-30 12:30:42 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-30 13:25:31 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-03-30 13:34:24 Error: [MissingControllerException] Controller class StickyController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-30 13:43:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'root_amit_m' for key 'username'
+#0 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(437): PDOStatement->execute(Array)
+#1 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(985): DboSource->execute('INSERT INTO `ca...')
+#3 /var/www/CakeSample/lib/Cake/Model/Model.php(1705): DboSource->create(Object(User), Array, Array)
+#4 /var/www/CakeSample/app/Controller/UsersController.php(74): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/CakeSample/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-01 13:55:45 Error: [MissingActionException] Action UsersController::display() could not be found.
+#0 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-01 14:56:54 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:56:54 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:56:54 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:56:54 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:56:54 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:56:54 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:56:55 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:56:55 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:56:55 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:56:56 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:56:57 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:56:57 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:56:57 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:01 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:01 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:01 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:01 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:01 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:02 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:03 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:04 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:05 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:05 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:05 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:05 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:05 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:05 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:05 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:05 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:08 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:09 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:10 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:11 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:11 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:21 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:29 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 14:57:30 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 15:10:47 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:10:51 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:11:49 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:13:31 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:13:32 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:14:17 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:15:08 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:15:09 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:15:11 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:15:18 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:15:27 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:15:28 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:15:28 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:15:29 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:15:58 Error: [CakeException] Authorization adapter "controller" was not found.
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/AuthComponent.php(380): AuthComponent->constructAuthorize()
+#1 /var/www/CakeSample/lib/Cake/Controller/Component/AuthComponent.php(330): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(StickyController))
+#3 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#8 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-01 15:16:09 Error: [CakeException] Authorization adapter "controller" was not found.
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/AuthComponent.php(380): AuthComponent->constructAuthorize()
+#1 /var/www/CakeSample/lib/Cake/Controller/Component/AuthComponent.php(330): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(StickyController))
+#3 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#8 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-01 15:16:44 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 15:16:53 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:33 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:35 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:36 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:36 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:36 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:36 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:37 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:37 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:37 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:37 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:38 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:38 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:18:38 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:20:12 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:20:14 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:20:18 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:22:35 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:22:58 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:23:31 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:27:46 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:28:41 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:29:44 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:30:06 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:30:35 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:31:13 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:31:52 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:33:12 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:35:52 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:37:59 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:40:08 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:56:30 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:56:32 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:58:59 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 15:59:52 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 16:01:13 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 16:01:25 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 16:01:27 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 16:04:02 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 16:06:54 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(StickyController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 16:55:45 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:11:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Sticky.id' in 'field list'
+#0 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(437): PDOStatement->execute(Array)
+#1 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('SELECT MAX(`Sti...', Array)
+#2 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(647): DboSource->execute('SELECT MAX(`Sti...', Array, Array)
+#3 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(1058): DboSource->fetchAll('SELECT MAX(`Sti...', false)
+#4 /var/www/CakeSample/lib/Cake/Model/Model.php(2663): DboSource->read(Object(AppModel), Array)
+#5 /var/www/CakeSample/app/Controller/StickyController.php(55): Model->find('first', Array)
+#6 [internal function]: StickyController->addnote()
+#7 /var/www/CakeSample/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(StickyController), Array)
+#8 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-04-01 17:29:19 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:29:23 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:29:23 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:29:23 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:29:23 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:29:24 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:29:24 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:29:24 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:29:25 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:23 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:23 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:23 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:23 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:25 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:25 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:25 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:25 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:33 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:33 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:33 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:33 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:33 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:33 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:33 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:33 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:34 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:34 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:34 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:55 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:39:57 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(222): SecurityComponent->blackHole(Object(StickyController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(StickyController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-04-01 17:46:18 Error: [MissingViewException] View file "/var/www/CakeSample/app/View/Sticky/update.ctp" is missing.
+#0 /var/www/CakeSample/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /var/www/CakeSample/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-01 17:46:18 Error: [MissingViewException] View file "/var/www/CakeSample/app/View/Sticky/update.ctp" is missing.
+#0 /var/www/CakeSample/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /var/www/CakeSample/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-01 17:46:18 Error: [MissingViewException] View file "/var/www/CakeSample/app/View/Sticky/update.ctp" is missing.
+#0 /var/www/CakeSample/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /var/www/CakeSample/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-01 17:46:18 Error: [MissingViewException] View file "/var/www/CakeSample/app/View/Sticky/update.ctp" is missing.
+#0 /var/www/CakeSample/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /var/www/CakeSample/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-01 17:46:18 Error: [MissingViewException] View file "/var/www/CakeSample/app/View/Sticky/update.ctp" is missing.
+#0 /var/www/CakeSample/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /var/www/CakeSample/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-01 17:52:50 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 17:52:50 Error: [MissingViewException] View file "/var/www/CakeSample/app/View/Sticky/delete.ctp" is missing.
+#0 /var/www/CakeSample/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /var/www/CakeSample/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-01 17:52:57 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 17:52:57 Error: [MissingViewException] View file "/var/www/CakeSample/app/View/Sticky/delete.ctp" is missing.
+#0 /var/www/CakeSample/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /var/www/CakeSample/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-01 17:52:58 Error: [MissingControllerException] Controller class StickynotesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 17:52:58 Error: [MissingViewException] View file "/var/www/CakeSample/app/View/Sticky/delete.ctp" is missing.
+#0 /var/www/CakeSample/lib/Cake/View/View.php(460): View->_getViewFileName(NULL)
+#1 /var/www/CakeSample/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#3 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-01 18:03:14 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 18:03:24 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 18:04:18 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-01 18:04:20 Error: [MissingControllerException] Controller class ImagesController could not be found.
+#0 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-04-02 09:40:04 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'root_mamit' for key 'username'
+#0 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(437): PDOStatement->execute(Array)
+#1 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(403): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /var/www/CakeSample/lib/Cake/Model/Datasource/DboSource.php(985): DboSource->execute('INSERT INTO `ca...')
+#3 /var/www/CakeSample/lib/Cake/Model/Model.php(1705): DboSource->create(Object(User), Array, Array)
+#4 /var/www/CakeSample/app/Controller/UsersController.php(74): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/CakeSample/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-04-02 11:09:40 Error: [MissingActionException] Action StickyController::logout() could not be found.
+#0 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(StickyController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-04-02 11:50:31 Error: [BadRequestException] The request has been black-holed
+#0 /var/www/CakeSample/lib/Cake/Controller/Component/SecurityComponent.php(227): SecurityComponent->blackHole(Object(UsersController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(UsersController))
+#2 /var/www/CakeSample/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /var/www/CakeSample/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 /var/www/CakeSample/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(100): Controller->startupProcess()
+#7 /var/www/CakeSample/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#8 /var/www/CakeSample/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
