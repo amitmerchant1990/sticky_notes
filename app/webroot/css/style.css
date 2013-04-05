@@ -130,12 +130,12 @@ body {
 }
 
 #slick-login {
-	width: 220px;
+	width: 278px;
 	height: 155px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	margin-left: -110px;
+	margin-left: -138px;
 	margin-top: -75px;
 
 	-webkit-animation: login 1s ease-in-out;
