@@ -24,7 +24,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		<?php //echo $cakeDescription ?>
-		<?php echo $title_for_layout; ?>
+		<?php //echo $title_for_layout; ?>
+                <?php echo "StickyNotes using CakePHP"; ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
@@ -38,13 +39,13 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->fetch('script');
 	?>
 </head>
-<body>
+<body id="home_page">
 	<div id="container">
 		<div id="top">
 			Stickynotes App
                         <span><?php echo $this->Html->image('logout.png', array("alt" => "logout", 'title'=>'logout', 'url' => array('controller' => 'users', 'action' => 'logout')), array('style'=>'float:right')); ?></span>
 		</div>
-		<div id="content">
+                <div id="content" style="margin-left: 208px;">
 
 			<?php echo $this->Session->flash(); ?>
 

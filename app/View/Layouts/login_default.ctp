@@ -24,7 +24,8 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		<?php //echo $cakeDescription ?>
-		<?php echo $title_for_layout; ?>
+		<?php //echo $title_for_layout; ?>
+                <?php echo "StickyNotes using CakePHP"; ?>
 	</title>
         <meta name="description" content="slick Login">
 	<?php
