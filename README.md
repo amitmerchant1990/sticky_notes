@@ -1,4 +1,4 @@
-Sticky Notes using CakePHP
+Sticky Notes App using CakePHP
 =========================
 
 
@@ -6,7 +6,7 @@ This is a basic "Sticky Note" application built with CakePHP Framework.
 
 The App's authentication is built with the CakePHP's auth component. 
 
-It includes all the CRUD functionalities. i.e Create a sticky note, updation of it and deleteion of the same.
+It includes all the CRUD functionalities. i.e Creating a sticky note, updation of it and deleteion of the same.
 
 Features included:
 
