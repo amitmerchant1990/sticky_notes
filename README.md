@@ -15,3 +15,6 @@ Features included:
 2) Authentication for particular user.
 
 I'll add more functions in next versions of App.
+
+
+Under <a href="http://amitmerchant1990.mit-license.org/">MIT Lecense</a>
