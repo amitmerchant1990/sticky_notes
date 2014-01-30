@@ -17,4 +17,4 @@ Features included:
 I'll add more functions in next versions of App.
 
 
-Under <a href="http://amitmerchant1990.mit-license.org/">MIT Lecense</a>
+Under <a href="http://amitmerchant1990.mit-license.org/">MIT License</a>
