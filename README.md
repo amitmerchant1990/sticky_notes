@@ -17,4 +17,7 @@ Features included:
 I'll add more functions in next versions of App.
 
 
+Visit <a href="http://amitmerchant1990.github.io/sticky_notes" target="_blank">Official Website</a>
+
+
 Under <a href="http://amitmerchant1990.mit-license.org/">MIT License</a>
