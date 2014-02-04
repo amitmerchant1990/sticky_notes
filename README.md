@@ -16,6 +16,8 @@ Features included:
 
 I'll add more functions in next versions of App.
 
+Happiy noting!
+
 
 <a href="http://amitmerchant1990.github.io/sticky_notes" target="_blank">Official Website</a>
 
