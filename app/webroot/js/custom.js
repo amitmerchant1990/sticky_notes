@@ -7,7 +7,7 @@ jQuery(function($) {
         
         jQuery.ajax({
 		   type: "POST",
-		   url: "/CakeSample/sticky/addnote",
+		   url: "sticky/addnote",
 		   success: function(data){
                        data = jQuery.parseJSON(data);
                        if(data.response == true){
@@ -38,7 +38,7 @@ jQuery(function($) {
         
         jQuery.ajax({
 		   type: "POST",
-		   url: "/CakeSample/sticky/delete",
+		   url: "sticky/delete",
                    data : "id="+remove_id,
 		   success: function(data){
                        data = jQuery.parseJSON(data);
@@ -60,7 +60,7 @@ jQuery(function($) {
         
         jQuery.ajax({
 		   type: "POST",
-		   url: "/CakeSample/sticky/update",
+		   url: "sticky/update",
                    data : "id="+update_id+"&content="+update_content,
 		   success: function(data){
                        data = jQuery.parseJSON(data);
